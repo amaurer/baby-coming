@@ -1060,8 +1060,10 @@
                 "Date": new Date().toLocaleDateString("en-US")
             }, function(err, record) {
                 if (err) {
+                    $("#submitSuccess").text("Failed").show();
                     return console.error(err);
                 }
+                $("#submitSuccess").text("Success!").show();
                 console.log(record.getId());
             });
         })
