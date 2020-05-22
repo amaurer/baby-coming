@@ -61,4 +61,5 @@
 }
 .saasland_col_6.saasland_col_screen {
   height: 100%;
+  overflow-x: scroll;
 }
