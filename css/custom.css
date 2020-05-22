@@ -1,0 +1,64 @@
+
+
+.page_body {
+
+}
+
+
+.page_body h1 {
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.page_body h2 {
+  color: #fafafa;
+  font-size: 32px;
+}
+.page_body h3 {
+  color: #fafafa;
+  font-size: 24px;
+  margin-bottom: 20px
+}
+.page_body p {
+  color: #fafafa;
+}
+.page_body table {
+  width: 100%;
+  color: #fafafa;
+}
+.page_body table th {
+  font-size: 22px;
+}
+
+.amydom {
+  border-radius: 50%;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .amydom {
+    height: 340px;
+    margin-top:10px;
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .amydom {
+    height: 170px;
+    margin-top:10px;
+    width: auto;
+  }
+}
+
+#clockdiv {
+  position: relative;
+  display: block;
+  bottom: 0px;
+}
+.saasland_col_6.saasland_col_screen {
+  height: 100%;
+}
