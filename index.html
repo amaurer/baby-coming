@@ -28,12 +28,19 @@
         <div class="saasland_container">
             <div class="saasland_col_6 saasland_col_content">
                 <div class="container_wrap">
-                    <img class="amydom border-gradient mt_30" src="img/amy-dominic.png" />
+                    <img class="amydom border-gradient mt_30" src="img/amy-dominic.jpg" />
                     <div class="saasland_log"> </div>
                     <div class="saasland_content">
                         <h1 class="f_robot_c f_50 f_700 text-center">Amy and Dominic's<br> baby is just around the corner!</h1>
                         <h3 class="f_robot_c f_50 f_500 text-center">All Donations will go directly to Amy & Dominic for diapers, wipes, and whatever they still need.</h3>
-                        <div id="paypal-button-container"></div>
+                        <div class="text-center">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick" />
+                                <input type="hidden" name="hosted_button_id" value="XURHPLH9GTKQQ" />
+                                <input type="image" src="img/paypal.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                <!-- <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /> -->
+                            </form>
+                        </div>
                     </div>
                     <div class="saasland_bottom">
                     </div>
@@ -122,28 +129,6 @@
     <script src="js/comming-soon.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script>
-    paypal.Buttons({
-        style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'paypal',
-            
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: []
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            });
-        }
-    }).render('#paypal-button-container');
-    </script>
 </body>
 
 </html>
