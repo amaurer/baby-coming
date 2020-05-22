@@ -39,19 +39,11 @@
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
-  .amydom {
-    height: 340px;
-    margin-top:10px;
-    width: auto;
-  }
-}
-@media (max-width: 576px) {
-  .amydom {
-    height: 170px;
-    margin-top:10px;
-    width: auto;
-  }
+.saasland_container .saasland_col_content .saasland_content {
+  margin: auto;
+  margin-top: 20px;
+  left: 15%;
+  top: auto;
 }
 
 #clockdiv {
@@ -62,4 +54,61 @@
 .saasland_col_6.saasland_col_screen {
   height: 100%;
   overflow-x: scroll;
+}
+
+@media (max-width: 991px) {
+  .saasland_container .saasland_col_content .saasland_content {
+    margin-top: 20px;
+    position: relative;
+    left: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .amydom {
+    height: 340px;
+    margin-top:10px;
+    width: auto;
+  }
+  .saasland_container .saasland_col_content .saasland_content {
+    margin-top: 20px;
+    position: relative;
+    left: auto;
+  }
+  .page_body h1 {
+    font-size: 36px;
+  }
+  .page_body h2 {
+    font-size: 24px;
+  }
+  .page_body h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .amydom {
+    height: 170px;
+    margin-top:10px;
+    width: auto;
+  }
+  .saasland_container .saasland_col_content .saasland_content {
+    margin-top: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .saasland_container .saasland_col_content {
+    height: 110vh;
+  }
+}
+@media (max-width: 375px) {
+  .saasland_container .saasland_col_content {
+    height: 120vh;
+  }
+}
+@media (max-width: 320px) {
+  .saasland_container .saasland_col_content {
+    height: 150vh;
+  }
 }
