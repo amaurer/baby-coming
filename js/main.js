@@ -1053,7 +1053,9 @@
 
 
         $("#nameFrom").submit(() => {
-
+            if($("#babyname").val() == ""){
+                return false;
+            }
             base('BabyNames').create({
                 "Name": $("#babyname").val(),
                 "Person": $("#yourname").val(),
