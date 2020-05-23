@@ -1063,8 +1063,13 @@
                     $("#submitSuccess").text("Failed").show();
                     return console.error(err);
                 }
-                $("#submitSuccess").text("Success!").show();
+                $("#submitSuccess").text("Added!").show();
+                $("#babyname").val("")
+                 $("#yourname").val("")
                 console.log(record.getId());
+                setTimeout(() => {
+                    $("#submitSuccess").text("")
+                }, 3000)
             });
         })
 
