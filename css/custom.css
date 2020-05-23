@@ -51,6 +51,9 @@
   display: block;
   bottom: 0px;
 }
+.saasland_container .saasland_col_screen {
+  background-color: #a485fd;
+}
 .saasland_col_6.saasland_col_screen {
   height: 100%;
   overflow-x: scroll;
@@ -102,12 +105,12 @@
     margin-top: 20px;
   }
   .saasland_container .saasland_col_content {
-    height: 90vh;
+    height: 95vh;
   }
 }
 @media (max-width: 375px) {
   .saasland_container .saasland_col_content {
-    height: 110vh;
+    height: 120vh;
   }
 }
 @media (max-width: 320px) {
